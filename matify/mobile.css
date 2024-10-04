@@ -1,0 +1,96 @@
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    .sidebar, .main-content {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .player {
+        height: auto;
+        padding: 15px;
+        flex-direction: column;
+        background-color: #252525;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .now-playing, .player-controls, .volume-control {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .track-info {
+        width: calc(100% - 70px);
+        margin-left: 10px;
+    }
+
+    .album-art {
+        width: 60px;
+        height: 60px;
+        border-radius: 5px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 20px;
+    }
+
+    .nertivia-button {
+        margin-top: 20px;
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .control-buttons {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 15px;
+    }
+
+    .control-buttons button {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .progress-bar {
+        margin-bottom: 15px;
+    }
+
+    .progress-container {
+        margin: 15px 0;
+    }
+
+    #volume {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .sidebar, .main-content, .player, .now-playing, .player-controls, .volume-control {
+        transition: all 0.3s ease;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 15px;
+    }
+
+    .album-art {
+        width: 50px;
+        height: 50px;
+    }
+
+    .control-buttons button {
+        font-size: 20px;
+        padding: 8px;
+    }
+}
